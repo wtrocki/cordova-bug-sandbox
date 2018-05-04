@@ -1,0 +1,1 @@
+## Cordova community bugs sandbox
