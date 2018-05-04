@@ -40,6 +40,8 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+
+        var ref = cordova.InAppBrowser.open('tel://+35344342012', '_blank', 'location=yes');
     }
 };
 
