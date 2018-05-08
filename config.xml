@@ -24,4 +24,5 @@
         <allow-intent href="itms-apps:*" />
     </platform>
     <engine name="android" spec="~7.0.0" />
+    <plugin name="cordova-plugin-screen-orientation" spec="https://github.com/wtrocki/cordova-plugin-screen-orientation.git#CB-14079" />
 </widget>

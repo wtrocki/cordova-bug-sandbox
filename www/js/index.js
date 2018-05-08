@@ -40,6 +40,12 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+        //window.screen.orientation.lock('portrait');
+        window.screen.orientation.unlock();
+        window.screen.orientation.lock('portrait');
+        window.screen.orientation.unlock();
+        //window.screen.orientation.unlock();
+        //window.screen.orientation.unlock();
     }
 };
 
