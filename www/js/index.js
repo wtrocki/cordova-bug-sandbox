@@ -40,6 +40,14 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+
+        window.open = cordova.InAppBrowser.open;
+        var ref = window.open("http://google.com",
+            '_self',
+            'location=no,zoom=no,hidden=yes,clearsessioncache=no,clearcache=no,disallowoverscroll=yes');
+        ref.addEventListener('loadstop', function(event) {
+            ref.show();
+        });
     }
 };
 
