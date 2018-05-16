@@ -45,11 +45,14 @@ var app = {
         
         a.play();
         setTimeout(function(){
-          a.seekTo(5000)
+          a.seekTo(1000)
           setTimeout(function(){
             a.seekTo(0)
           }, 5000);
-        },10000);
+          setTimeout(function(){
+            a.seekTo(2000)
+          }, 10000);
+        }, 5000);
        
     }
 };
