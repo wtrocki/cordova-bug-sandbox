@@ -46,10 +46,11 @@ var app = {
         a.play();
         setTimeout(function(){
           a.seekTo(5000)
-        },2000)
-        setTimeout(function(){
-          a.seekTo(2000)
-        },7000)
+          setTimeout(function(){
+            a.seekTo(0)
+          }, 5000);
+        },10000);
+       
     }
 };
 
