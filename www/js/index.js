@@ -42,8 +42,14 @@ var app = {
         console.log('Received Event: ' + id);
 
         var a = new Media('https://audio-ssl.itunes.apple.com/apple-assets-us-std-000001/AudioPreview41/v4/cc/ee/4b/ccee4b08-094f-5972-6a4f-80fe2d056660/mzaf_6222722413468693928.plus.aac.p.m4a', null, function(err) {console.log(err);});
-
-        a.play();   
+        
+        a.play();
+        setTimeout(function(){
+          a.seekTo(5000)
+        },2000)
+        setTimeout(function(){
+          a.seekTo(2000)
+        },7000)
     }
 };
 
